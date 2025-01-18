@@ -26,7 +26,7 @@ const links = [
         <logo />
       </nuxt-link>
 
-      <nav class="flex gap-2">
+      <nav class="gap-2 sm:flex hidden">
         <nuxt-link
           v-for="(link, i) of links"
           :key="i"
