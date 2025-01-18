@@ -1,0 +1,14 @@
+[data-aos="fade-up"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 1;
+  }
+
+  transform: translateY(100px);
+
+  &.aos-animate {
+    transform: 0;
+  }
+}
