@@ -58,13 +58,14 @@ onMounted(() => {
     class="project-card__anchor z-10"
   />
   <div
+    :id="`${order}`"
     ref="card"
     data-aos="fade-up"
     class="project-card rounded-xl w-full overflow-hidden h-[660px] mb-4 relative backdrop-blur-xl group"
     :style="{ zIndex, transitionDelay: `${order * 150}ms` }"
   >
     <nuxt-link
-      to="/project/1"
+      :to="`#${order}`"
       class="w-full h-full flex flex-col z-[1] absolute hover:bg-black/40 hover:backdrop-blur-sm transition-all duration-700"
     >
       <div
@@ -89,14 +90,10 @@ onMounted(() => {
         </div>
       </div>
     </nuxt-link>
-    <nuxt-img
-      class="group-hover:scale-105 transition-transform duration-700"
-      fit="cover"
-      :width="width"
-      :height="660"
-      :src="img"
-      :quality="quality"
-    />
+    <img
+      class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover"
+      :src="'/img/' + img"
+    >
   </div>
 </template>
 
