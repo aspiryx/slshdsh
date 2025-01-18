@@ -16,7 +16,7 @@ const links = [
 </script>
 
 <template>
-  <div class="bg-black/70 backdrop-blur-md sticky top-0 z-10">
+  <div class="bg-black/70 backdrop-blur-md sticky top-0 z-10 border-b border-b-white/10">
     <header class="flex justify-between container py-6 items-center overflow-hidden">
       <div>
         SLASH DASH
