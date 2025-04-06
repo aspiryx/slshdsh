@@ -8,6 +8,10 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/google-fonts',
     'nuxt-aos',
+    '@vueuse/nuxt',
+    'motion-v/nuxt',
+    '@pinia/nuxt',
+    'pinia-plugin-persistedstate/nuxt',
   ],
   tailwindcss: {
     config: {
@@ -15,16 +19,12 @@ export default defineNuxtConfig({
         container: {
           center: true,
           padding: '2rem',
-          // screens: {
-          //   '2xl': '1880px'
-          // }
+          screens: {
+            '2xl': '1880px',
+          },
         },
       },
     },
-  },
-  image: {
-    dir: 'assets/images',
-    provider: 'ipx',
   },
   googleFonts: {
     families: {
