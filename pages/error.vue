@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div class="container content-center text-center">
-    <div class="semibold uppercase flex flex-col gap-2">
+    <div class="font-semibold uppercase flex flex-col gap-2">
       <div class="text-9xl">
         {{ error.statusCode }}
       </div>

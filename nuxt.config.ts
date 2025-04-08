@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css', '~/assets/css/aos.scss'],
+  css: ['~/assets/css/main.scss', '~/assets/css/aos.scss'],
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
@@ -13,18 +13,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'pinia-plugin-persistedstate/nuxt',
   ],
-  tailwindcss: {
-    config: {
-      theme: {
-        container: {
-          center: true,
-          padding: '2rem',
-          screens: {
-            '2xl': '1880px',
-          },
-        },
-      },
-    },
+  aos: {
+    once: true,
   },
   googleFonts: {
     families: {

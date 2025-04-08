@@ -21,25 +21,30 @@ const isFocused = computed(() => store.hoveredCard === props.value.id)
     <motion.div
       v-if="isFocused"
       layout-id="project-grid-card-selection"
+      :style="{
+        // backgroundImage: 'radial-gradient(transparent 1px, #000004 1px)',
+        backgroundSize: '4px 4px',
+        backgroundRepeat: 'repeat'
+      }"
       class="top-0 absolute w-full h-full rounded-xl border border-white/10 backdrop-blur-md bg-black/40 z-10 pointer-events-none flex flex-col"
     >
       <div
-        class="h-full content-center text-center text-xl md:text-4xl xl:text-4xl font-semibold p-6"
+        class="h-full content-center text-center text-xl md:text-4xl xl:text-4xl font-semibold pt-14"
       >
         <motion.div layout-id="project-grid-card-title">
           {{ value.title }}
         </motion.div>
       </div>
-      <div class="p-6 py-12 pt-12">
+      <div class="p-6 py-5 pt-12">
         <motion.div
           layout-id="project-grid-card-subtitle"
-          class="font-semibold text-2xl text-white/50 z-10"
+          class="font-semibold text-2xl text-white/20 z-10"
         >
           {{ value.subtitle }}
         </motion.div>
         <motion.div
           layout-id="project-grid-card-description"
-          class="font-semibold text-white/50 text-sm flex justify-between z-10"
+          class="font-semibold text-white/20 text-sm flex justify-between z-10"
         >
           <div>{{ value.description }}</div>
           <div>{{ value.id }}</div>

@@ -1,9 +1,0 @@
-html {
-  font-family: Montserrat;
-  scroll-behavior: smooth;
-}
-
-html, body, #__nuxt, #__layout{
-  min-height: 100% !important;
-  background-color: black;
-}

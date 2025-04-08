@@ -5,7 +5,14 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
+      padding: {
+        DEFAULT: '0.5rem',
+        md: '10rem',
+      },
+      screens: {
+        'xl': '1440px',
+        '2xl': '1650px',
+      },
     },
   },
   plugins: [],
